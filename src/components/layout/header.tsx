@@ -1,13 +1,12 @@
 "use client";
 
 import { signOut, useSession } from "@/lib/auth-client";
-import { LogOut, Package, Menu } from "lucide-react";
+import { LogOut, Package } from "lucide-react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { Button } from "../ui/button";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "../ui/dropdown-menu";
-import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
-import { useRouter } from "next/navigation";
 
 
 const Header = () => {
